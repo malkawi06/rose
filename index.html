@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <title>sorry nour · in bloom</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Consolas, Menlo, "DejaVu Sans Mono", "Courier New", monospace;
+      background: #000;
+      color: #f1dce7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      overflow-x: hidden;
+      background: #000;
+    }
+    main { width: min(1080px, 100%); text-align: center; }
+    canvas {
+      display: block;
+      width: min(100%, calc((100vh - 125px) * 1.125));
+      max-width: 1080px;
+      height: auto;
+      margin-inline: auto;
+      aspect-ratio: 9 / 8;
+      background: #000;
+      outline: 1px solid #ffffff0b;
+    }
+    h1 {
+      margin: 14px 0 0;
+      color: #ff7ab6;
+      font-size: clamp(24px, 4vw, 42px);
+      font-weight: 400;
+      letter-spacing: .08em;
+      text-shadow: 0 0 18px #ff4c9b75;
+    }
+    footer {
+      margin-top: 10px;
+      color: #8c7f8c;
+      font-size: 11px;
+      line-height: 1.6;
+    }
+    footer a { color: #c99ab4; text-decoration: none; }
+    footer a:hover { color: #ff9bc7; }
+    @media (max-width: 600px) {
+      body { padding: 8px; }
+      canvas { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <canvas id="roseCanvas" width="1080" height="960" aria-label="A live ASCII rendering of a white rose">Your browser needs canvas support to show the rose.</canvas>
+    <h1>sorry nour</h1>
+  </main>
+  <script src="rose.js"></script>
+</body>
+</html>
